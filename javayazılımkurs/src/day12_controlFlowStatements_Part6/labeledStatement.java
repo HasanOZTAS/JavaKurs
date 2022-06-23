@@ -1,0 +1,27 @@
+package day12_controlFlowStatements_Part6;
+
+public class labeledStatement {
+
+	public static void main(String[] args) {
+		
+		int i=0;
+		
+		abcd:			// label name is abcd
+			do {
+				i=8;
+				inner:	// label name is inner
+					while (true) {
+						System.out.println(i--);
+						if (i==4) {
+							break abcd;
+						}
+					}
+			}while (true);
+		
+		
+		
+		
+
+	}
+
+}
